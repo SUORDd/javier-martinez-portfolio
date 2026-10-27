@@ -1,0 +1,38 @@
+import type { AelpCapture } from "@/components/aelp-capture-gallery";
+
+type CaptureEnglish = Pick<AelpCapture, "titleEn" | "descriptionEn" | "altEn" | "categoryEn">;
+
+export const captureEnglish: Record<string, CaptureEnglish> = {
+  "1.webp": { titleEn: "Opening screen", descriptionEn: "Opening view of the prototype featuring Inglés Chido's visual identity.", altEn: "Inglés Chido opening screen with its logo and loading bar.", categoryEn: "Getting started" },
+  "2.webp": { titleEn: "Welcome and sign-in", descriptionEn: "Welcome screen with the product identity and options to start or sign in.", altEn: "Inglés Chido welcome screen with options to get started or sign in.", categoryEn: "Getting started" },
+  "3.webp": { titleEn: "Product introduction", descriptionEn: "An introduction to the learning concept and ways to get started.", altEn: "Inglés Chido product introduction with learning goals and a get-started option.", categoryEn: "Getting started" },
+  "4.webp": { titleEn: "Learning goal", descriptionEn: "An onboarding step for choosing the learner's motivation.", altEn: "Screen for choosing a learning goal.", categoryEn: "Onboarding" },
+  "5.webp": { titleEn: "Practice time", descriptionEn: "Choose how much time to spend practicing English each day.", altEn: "Onboarding screen for choosing daily practice time.", categoryEn: "Onboarding" },
+  "6.webp": { titleEn: "Interests", descriptionEn: "Choose topics of interest to personalize the experience.", altEn: "Onboarding screen for selecting topics of interest.", categoryEn: "Onboarding" },
+  "7.webp": { titleEn: "Communication preferences", descriptionEn: "Choose a communication style for a more personalized experience.", altEn: "Screen for choosing a preferred communication style.", categoryEn: "Onboarding" },
+  "8.webp": { titleEn: "English level", descriptionEn: "An initial self-assessment of English proficiency.", altEn: "Onboarding screen for indicating the learner's current English level.", categoryEn: "Onboarding" },
+  "9.webp": { titleEn: "A1 learning path · Natural Valley", descriptionEn: "A visual path with learning nodes in different states.", altEn: "Inglés Chido A1 learning path with locked nodes and available lessons.", categoryEn: "Learning path & lessons" },
+  "13.webp": { titleEn: "Learning map", descriptionEn: "A view of the A1 path with its levels and lesson links.", altEn: "Illustrated map of the Inglés Chido A1 learning path.", categoryEn: "Learning path & lessons" },
+  "14.webp": { titleEn: "Lesson · Introduce yourself", descriptionEn: "A lesson view placed within the learning map.", altEn: "Learning map with the Introduce Yourself lesson card.", categoryEn: "Learning path & lessons" },
+  "15.webp": { titleEn: "Lesson · Objects and colors", descriptionEn: "A vocabulary lesson set within the learning path.", altEn: "Learning map with the Objects and Colors lesson card.", categoryEn: "Learning path & lessons" },
+  "16.webp": { titleEn: "Lesson · Alphabet", descriptionEn: "Entry to the alphabet lesson from the A1 path.", altEn: "Learning map with access to the alphabet lesson.", categoryEn: "Learning path & lessons" },
+  "17.webp": { titleEn: "Lesson: The alphabet", descriptionEn: "An audiovisual A1 lesson cover with controls and step navigation.", altEn: "Alphabet lesson in the Inglés Chido app.", categoryEn: "Learning path & lessons" },
+  "17_1.webp": { titleEn: "Spelling and writing practice", descriptionEn: "A visual activity connecting words, animals, and written practice.", altEn: "Learning activity with the words dog and cat and a notebook for writing practice.", categoryEn: "Learning path & lessons" },
+  "21.webp": { titleEn: "Learning path · dark theme", descriptionEn: "A view of the A1 path with dark theme enabled.", altEn: "Inglés Chido learning map in dark theme.", categoryEn: "Learning path & lessons" },
+  "18.webp": { titleEn: "Vowel practice", descriptionEn: "A guided activity for listening, repeating, and practicing pronunciation.", altEn: "Vowel activity with audio, pronunciation guidance, and a repeat control.", categoryEn: "Listening & practice" },
+  "19.webp": { titleEn: "Listening recognition", descriptionEn: "Listen to a vowel and choose the letter that matches the sound.", altEn: "Activity for identifying a vowel by its pronunciation.", categoryEn: "Listening & practice" },
+  "20.webp": { titleEn: "Consonant practice", descriptionEn: "A consonant lesson with controls to listen and repeat.", altEn: "Consonant lesson with audio, pronunciation, and practice options.", categoryEn: "Listening & practice" },
+  "10.webp": { titleEn: "Review", descriptionEn: "A summary of areas that may need more practice.", altEn: "Review screen with sections for patterns, vocabulary, and skills.", categoryEn: "Review & vocabulary" },
+  "11.webp": { titleEn: "Vocabulary", descriptionEn: "Browse saved words and add new vocabulary.", altEn: "Vocabulary screen with search, filters, and an option to add words.", categoryEn: "Review & vocabulary" },
+  "22.webp": { titleEn: "Review · dark theme", descriptionEn: "The review module displayed in dark theme.", altEn: "Inglés Chido review module in dark theme.", categoryEn: "Review & vocabulary" },
+  "22_1.webp": { titleEn: "Review areas · dark theme", descriptionEn: "Practice sections and content to revisit in dark theme.", altEn: "List of review areas in the dark Inglés Chido interface.", categoryEn: "Review & vocabulary" },
+  "22_2.webp": { titleEn: "Vocabulary · dark theme", descriptionEn: "Browse and practice vocabulary in dark theme.", altEn: "Vocabulary screen with a saved word in dark theme.", categoryEn: "Review & vocabulary" },
+  "12.webp": { titleEn: "Progress by skill", descriptionEn: "A local view of skill levels and evidence status.", altEn: "Progress module showing language skills and evidence status.", categoryEn: "Progress" },
+  "22_3.webp": { titleEn: "Progress by skill · dark theme", descriptionEn: "The progress view in dark theme.", altEn: "Progress by skill in the dark interface.", categoryEn: "Progress" },
+  "dashboard-docente.png": { titleEn: "Teacher dashboard", descriptionEn: "Home panel with teacher-module shortcuts, recent activity, and academic indicators.", altEn: "STI-NEM teacher dashboard; personal names and figures have been anonymized.", categoryEn: "Teachers" },
+  "grupos.png": { titleEn: "Class management", descriptionEn: "Browse classes with filters for grade and school year.", altEn: "Class list with filters and cards; student counts have been hidden.", categoryEn: "Teachers" },
+  "detalle-grupo.png": { titleEn: "Class details and settings", descriptionEn: "Challenge settings and participant list, with names and aliases anonymized.", altEn: "Class details, settings, and table; names and aliases have been anonymized.", categoryEn: "Teachers" },
+  "perfil-estudiante.png": { titleEn: "Student profile", descriptionEn: "Tabs organize learning information, progress, and activity; profile data has been anonymized.", altEn: "Student profile with anonymized personal data and progress values.", categoryEn: "Students" },
+  "generacion-ejercicios.png": { titleEn: "Exercise criteria", descriptionEn: "Choose curriculum criteria and view where results would appear. The screenshot does not confirm that generation is connected.", altEn: "Exercise-generation criteria screen; the results view is empty.", categoryEn: "Exercises" },
+  "ejercicios.png": { titleEn: "Browse exercises", descriptionEn: "A visual list with curriculum filters, difficulty levels, and exercise actions.", altEn: "Exercise table with filters for grade, subject area, and content.", categoryEn: "Exercises" },
+};
