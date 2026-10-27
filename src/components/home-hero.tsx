@@ -35,7 +35,7 @@ export function HomeHero() {
 
           <p className={styles.description}>
             <LanguageText
-              es="Busco una residencia profesional, es decir, prácticas profesionales, a partir de enero de 2027, donde pueda contribuir en proyectos de Data Science o Software Engineering. Aporto pensamiento analítico, desarrollo de aplicaciones y disposición para aprender dentro de un equipo tecnológico."
+              es="Busco prácticas profesionales a partir de enero de 2027 para contribuir en proyectos de Ciencia de Datos o Ingeniería de Software. Aporto pensamiento analítico y habilidades para desarrollar aplicaciones, con disposición para aprender y colaborar en un equipo tecnológico."
               en="I am seeking a professional internship starting in January 2027, where I can contribute to Data Science or Software Engineering projects. I bring analytical thinking, application development experience, and a willingness to learn within a technology team."
             />
           </p>
