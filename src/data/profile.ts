@@ -10,7 +10,7 @@ export const profile = {
   phone: "+52 271 228 9859",
   phoneUri: "+522712289859",
   github: "https://github.com/SUORDd",
-  linkedin: "https://www.linkedin.com/in/tecomahua",
+  linkedin: "https://www.linkedin.com/in/Tecomahua",
   contactLocation: "Veracruz, México",
   languages: "Español nativo · Inglés B2",
   availability: "Enero de 2027",
