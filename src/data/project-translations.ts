@@ -54,12 +54,30 @@ export const projectEnglish: Record<string, Partial<Project>> = {
       "Validate exercise generation, authentication, and administrative profiles.",
     ],
   },
-  "proximo-proyecto": {
-    name: "Upcoming project",
-    category: "Reserved space",
-    role: "In preparation",
-    status: "In preparation",
-    summary: "A new project will be added here soon.",
+  "spa-orizaba": {
+    category: "Data Science · Commercial analysis",
+    role: "Technical data analysis",
+    status: "Academic project · 2026",
+    summary:
+      "Public-data analysis to assess the opportunity for a spa in Orizaba and prioritize a location to investigate.",
+    problem:
+      "The decision required comparing economic context, demographics, and local competition without presenting indirect signals as proven demand.",
+    solution:
+      "A regional and neighborhood comparison combining economic, demographic, and business data into indicators and visualizations that guide the next field study.",
+    contribution:
+      "I led the technical work: sourcing, cleaning, transforming, and integrating datasets; preparing indicators and producing inputs for the team’s storytelling and communication.",
+    overview: [
+      "An academic data science project assessing whether Orizaba showed favorable signals for an accessible mixed spa and where to begin looking for a location.",
+      "The analysis combines state-level ENIGH 2024 economic context with DENUE business records and municipal demographics from the 2020 Population Census / ITER. The evidence helps prioritize options; it does not replace sales data or a field study.",
+    ],
+    implemented: [
+      "Prepared and analyzed ENIGH, DENUE, and 2020 Census / ITER data.",
+      "Classified direct competitors and related services, normalizing business names and validating geographic records.",
+      "Built regional and neighborhood indicators, plus visualizations of competition and demographics.",
+    ],
+    planned: [
+      "Validate rent, pedestrian traffic, parking, safety, and property conditions before making an investment decision.",
+    ],
   },
 };
 

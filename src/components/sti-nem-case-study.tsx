@@ -328,8 +328,8 @@ export function StiNemCaseStudy() {
 
       <nav className="shell project-pagination" aria-label="Más proyectos / More projects">
         <Link href="/#proyectos"><ArrowLeft size={16} /> <LanguageText es="Todos los proyectos" en="All projects" /></Link>
-        <Link href="/proyectos/ingles-chido/">
-          <div><small><LanguageText es="PROYECTO ANTERIOR" en="PREVIOUS PROJECT" /></small><strong>Inglés Chido</strong></div>
+        <Link href="/proyectos/spa-orizaba/">
+          <div><small><LanguageText es="SIGUIENTE PROYECTO" en="NEXT PROJECT" /></small><strong>SPA Orizaba</strong></div>
           <ArrowRight size={23} />
         </Link>
       </nav>

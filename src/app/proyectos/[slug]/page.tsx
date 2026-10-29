@@ -15,6 +15,7 @@ import { profile } from "@/data/profile";
 import { LearningPathArt, TeacherDashboardArt } from "@/components/project-art";
 import { InglesChidoCaseStudy } from "@/components/ingles-chido-case-study";
 import { StiNemCaseStudy } from "@/components/sti-nem-case-study";
+import { SpaOrizabaCaseStudy } from "@/components/spa-orizaba-case-study";
 import { getPublicAssetPath, getSiteUrl } from "@/lib/site-url";
 import { LanguageText } from "@/components/language-provider";
 import { projectText } from "@/data/project-translations";
@@ -75,6 +76,7 @@ export default async function ProjectPage({
 
   if (isInglesChido) return <InglesChidoCaseStudy />;
   if (project.slug === "tutor-ia-nem") return <StiNemCaseStudy />;
+  if (project.slug === "spa-orizaba") return <SpaOrizabaCaseStudy />;
 
   return (
     <main className="detail-page" key={project.slug}>

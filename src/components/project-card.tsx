@@ -3,6 +3,7 @@ import { ArrowUpRight, Plus } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { InglesChidoCover } from "@/components/ingles-chido-cover";
 import { StiNemBrowserFrame } from "@/components/sti-nem-browser-frame";
+import { SpaOrizabaCover } from "@/components/spa-orizaba-cover";
 import { LanguageText } from "@/components/language-provider";
 import { projectText } from "@/data/project-translations";
 
@@ -55,6 +56,8 @@ export function ProjectCard({ project }: { project: Project }) {
           <InglesChidoCover />
         ) : project.slug === "tutor-ia-nem" ? (
           <StiNemBrowserFrame className="sti-card-browser-frame" showCaption={false} />
+        ) : project.slug === "spa-orizaba" ? (
+          <SpaOrizabaCover />
         ) : (
           <div className="reserved-art">
             <span className="reserved-ring" />

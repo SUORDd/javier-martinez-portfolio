@@ -83,23 +83,34 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "proximo-proyecto",
+    slug: "spa-orizaba",
     number: "03",
-    name: "Próximo proyecto",
-    category: "Espacio reservado",
-    role: "En preparación",
-    status: "En preparación",
-    summary: "Un nuevo proyecto se incorporará próximamente a este espacio.",
-    problem: "",
-    solution: "",
-    contribution: "",
-    tags: [],
-    overview: [],
-    implemented: [],
-    planned: [],
+    name: "SPA Orizaba",
+    category: "Ciencia de Datos · Análisis comercial",
+    role: "Análisis técnico · Ciencia de Datos",
+    status: "Proyecto académico · 2026",
+    summary:
+      "Análisis de datos públicos para evaluar la oportunidad de instalar un SPA en Orizaba y priorizar una zona de búsqueda.",
+    problem:
+      "La decisión requería contrastar capacidad económica, perfil demográfico y competencia local sin presentar señales indirectas como demanda comprobada.",
+    solution:
+      "Una comparación regional y por zonas que integra datos económicos, demográficos y de establecimientos en indicadores y visualizaciones para orientar la siguiente investigación de campo.",
+    contribution:
+      "Lideré el trabajo técnico: localicé, limpié, transformé e integré las fuentes de datos; preparé indicadores y generé los insumos para el storytelling y la comunicación del equipo.",
+    tags: ["Python", "Pandas", "NumPy", "ENIGH 2024", "DENUE", "INEGI"],
+    overview: [
+      "Proyecto académico de ciencia de datos para evaluar si Orizaba ofrecía señales favorables para un SPA mixto y accesible, y para decidir dónde iniciar la búsqueda de un local.",
+      "El análisis combina contexto económico estatal de ENIGH 2024 con registros de DENUE y perfil demográfico municipal de CPV 2020 / ITER. La evidencia permite priorizar opciones; no sustituye una medición de ventas ni un estudio comercial de campo.",
+    ],
+    implemented: [
+      "Preparación y análisis de ENIGH, DENUE e ITER / CPV 2020.",
+      "Clasificación de competencia directa y servicios afines con normalización de nombres y validación geográfica.",
+      "Indicadores regionales y por zona, más visualizaciones de competencia y perfil demográfico.",
+    ],
+    planned: [
+      "Validar renta, flujo peatonal, estacionamiento, seguridad y condiciones del local antes de tomar una decisión de inversión.",
+    ],
   },
 ];
 
-export const detailedProjects = projects.filter(
-  (project) => project.slug !== "proximo-proyecto",
-);
+export const detailedProjects = projects;

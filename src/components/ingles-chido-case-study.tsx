@@ -393,6 +393,14 @@ export function InglesChidoCaseStudy() {
           </div>
         </div>
       </section>
+
+      <nav className="shell project-pagination" aria-label="Más proyectos / More projects">
+        <Link href="/#proyectos"><ArrowLeft size={16} /> <LanguageText es="Todos los proyectos" en="All projects" /></Link>
+        <Link href="/proyectos/tutor-ia-nem/">
+          <div><small><LanguageText es="SIGUIENTE PROYECTO" en="NEXT PROJECT" /></small><strong>STI-NEM</strong></div>
+          <ArrowRight size={23} />
+        </Link>
+      </nav>
     </main>
   );
 }
