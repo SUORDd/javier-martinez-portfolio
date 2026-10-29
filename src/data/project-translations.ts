@@ -30,23 +30,25 @@ export const projectEnglish: Record<string, Partial<Project>> = {
     ],
   },
   "tutor-ia-nem": {
-    role: "Frontend developer · social service program",
+    category: "Educational Technology · AI Tutoring",
+    role: "Frontend developer · teacher module",
     status: "Academic team project",
     summary:
-      "An educational web platform for organizing academic workflows and learning activities; my work focused on the frontend.",
+      "An AI tutor for fourth-grade students, aligned with Mexico’s New Mexican School curriculum and designed to generate exercises that support learning.",
     problem:
-      "Managing classes, students, and learning activities requires clear workflows for different school roles.",
+      "Fourth-grade students need guided practice with curriculum content. STI-NEM proposes an intelligent tutor that offers exercises and supports their learning.",
     solution:
-      "An educational web application that brings together teacher workflows and learning activities linked to curriculum content.",
+      "A web system with teacher, student, and administrator modules. Its initial goal is to generate AI-assisted exercises aligned with the New Mexican School curriculum.",
     contribution:
-      "I contributed to frontend development and prepared contracts, mock services, and adapters for API integration; the source code is unavailable to verify each implementation.",
+      "I developed the teacher-module screens, including the dashboard, class-management, and exercise views. My contribution focused on the teacher interface within the team building the broader system.",
     overview: [
-      "STI-NEM is an educational web platform with interfaces for academic management and learning activities. The work was completed as a team as part of a master's thesis project at Mexico's National Institute of Technology.",
+      "STI-NEM is an AI-assisted intelligent tutoring system designed for fourth-grade students. Its initial goal is to generate exercises aligned with Mexico’s New Mexican School curriculum and help students learn as they solve them. The platform includes teacher, student, and administrator modules.",
+      "The work was completed as a team as part of a master's thesis project at Mexico's National Institute of Technology.",
       "Available screenshots document the views. The frontend and backend repositories are not public or accessible from this environment, so I could not verify dependencies, routes, services, or a live API connection.",
     ],
     implemented: [
-      "Screenshots of the teacher dashboard, classes, student profile, exercise settings, and exercise browsing.",
-      "A curriculum-criteria interface for exercises; the screenshot does not confirm connected generation or result processing.",
+      "Teacher-module screens: dashboard, class management, and views related to students and exercises.",
+      "An exercise criteria interface aligned with the curriculum. Screenshots show the UI but do not by themselves verify AI generation.",
     ],
     planned: [
       "Verify contracts, routes, and technologies against the sti-nem-front repository when the code is accessible.",

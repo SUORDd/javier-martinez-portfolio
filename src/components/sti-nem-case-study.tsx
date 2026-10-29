@@ -25,6 +25,15 @@ import { getPublicAssetPath } from "@/lib/site-url";
 
 const organizationUrl = "https://github.com/Tutor-IA-NEM";
 
+const focusTags = [
+  { es: "Tutoría con IA", en: "AI tutoring" },
+  { es: "Nueva Escuela Mexicana", en: "New Mexican School" },
+  { es: "4.º de primaria", en: "Grade 4" },
+  { es: "Módulo docente", en: "Teacher module" },
+  { es: "Desarrollo frontend", en: "Frontend engineering" },
+  { es: "Servicio social", en: "Social service" },
+];
+
 const captures: AelpCapture[] = [
   {
     file: "dashboard-docente.png",
@@ -122,23 +131,17 @@ export function StiNemCaseStudy() {
           </Link>
           <div className="sti-case-hero-grid">
             <div className="sti-case-intro">
-              <p className="eyebrow"><span>02</span> / <LanguageText es="CASO DE ESTUDIO · INGENIERÍA DE SOFTWARE" en="SOFTWARE ENGINEERING CASE STUDY" /></p>
+              <p className="eyebrow"><span>02</span> / <LanguageText es="CASO DE ESTUDIO · TUTORÍA INTELIGENTE" en="AI TUTORING CASE STUDY" /></p>
               <h1>STI-NEM<span>.</span></h1>
               <p className="sti-case-subtitle">
-                <LanguageText es="Sistema inteligente de tutoría y gestión educativa" en="Intelligent Tutoring & Educational Management System" />
+                <LanguageText es="Tutor inteligente con IA para la Nueva Escuela Mexicana" en="AI tutor for Mexico’s New Mexican School" />
               </p>
               <p className="sti-case-lede">
-                <LanguageText es="Plataforma web educativa para organizar flujos académicos y actividades de aprendizaje. Mi participación se centró en el frontend y en preparar la comunicación con los servicios del sistema." en="An educational web platform for academic workflows and learning activities. My contribution focused on the frontend and preparing communication with system services." />
+                <LanguageText es="Diseñado para niñas y niños de cuarto de primaria, STI-NEM busca apoyar su aprendizaje con un tutor inteligente. Su objetivo inicial es generar ejercicios con IA alineados con la Nueva Escuela Mexicana. La plataforma contempla módulos de docente, estudiante y administración. Mi aporte se centró en construir las pantallas del módulo docente." en="Designed for fourth-grade students, STI-NEM aims to support learning with an intelligent tutor. Its initial goal is to generate AI-assisted exercises aligned with Mexico’s New Mexican School curriculum. The platform includes teacher, student, and administrator modules. I focused on building the teacher-module screens." />
               </p>
               <div className="sti-case-tags" aria-label="Enfoque del proyecto / Project focus">
-                {["Web Application", "Frontend Engineering", "Educational Technology", "API Integration", "Servicio Social"].map((tag) => (
-                  <span key={tag}>
-                    {tag === "Web Application" ? <LanguageText es="Aplicación web" en={tag} />
-                      : tag === "Frontend Engineering" ? <LanguageText es="Desarrollo frontend" en={tag} />
-                        : tag === "Educational Technology" ? <LanguageText es="Tecnología educativa" en={tag} />
-                          : tag === "API Integration" ? <LanguageText es="Integración con API" en={tag} />
-                            : <LanguageText es={tag} en="Social Service Program" />}
-                  </span>
+                {focusTags.map((tag) => (
+                  <span key={tag.en}><LanguageText es={tag.es} en={tag.en} /></span>
                 ))}
               </div>
               <p className="sti-case-stack-label"><LanguageText es="STACK REFERIDO PARA EL PROYECTO" en="REPORTED PROJECT STACK" /></p>
@@ -166,10 +169,10 @@ export function StiNemCaseStudy() {
         <div className="shell sti-case-context-grid">
           <div>
             <p className="eyebrow"><span>01</span> / <LanguageText es="RESUMEN" en="OVERVIEW" /></p>
-            <h2><LanguageText es="Gestión académica y actividades de aprendizaje." en="Academic management and learning activities." /></h2>
+            <h2><LanguageText es="Un tutor inteligente para practicar y aprender." en="An intelligent tutor to practice and learn." /></h2>
           </div>
           <p>
-            <LanguageText es="STI-NEM contempla perfiles escolares, gestión de grupos y estudiantes, además de ejercicios vinculados con contenidos curriculares. Las capturas disponibles documentan principalmente la experiencia docente y algunas vistas de ejercicios." en="STI-NEM covers school profiles, class and student management, and exercises linked to curriculum content. The available screenshots mainly document the teacher experience and some exercise views." />
+            <LanguageText es="El sistema está pensado para apoyar a estudiantes de cuarto de primaria con ejercicios de la Nueva Escuela Mexicana generados con IA. También contempla módulos de docente, estudiante y administración; las capturas disponibles muestran sobre todo la interfaz del módulo docente." en="The system is designed to support fourth-grade students with AI-generated exercises aligned with Mexico’s New Mexican School curriculum. It also includes teacher, student, and administrator modules; the available screenshots mainly show the teacher interface." />
           </p>
         </div>
       </section>
@@ -249,7 +252,7 @@ export function StiNemCaseStudy() {
             </article>
           </div>
           <p className="sti-case-architecture-note">
-            <LanguageText es="No se presenta la generación de ejercicios con IA, la sesión ni el consumo de servicios como integraciones operativas confirmadas." en="AI exercise generation, sessions, and service consumption are not presented as confirmed working integrations." />
+            <LanguageText es="La generación de ejercicios con IA es un objetivo central del sistema. Las capturas disponibles documentan interfaces, pero no demuestran por sí solas que la generación o la conexión con servicios estén operativas." en="AI exercise generation is a central goal of the system. The available screenshots document interfaces but do not by themselves verify that generation or service connections are operational." />
           </p>
         </div>
       </section>
@@ -276,14 +279,14 @@ export function StiNemCaseStudy() {
         <div className="shell sti-case-context-grid">
           <div>
             <p className="eyebrow"><span>06</span> / <LanguageText es="MI ROL Y CONTRIBUCIÓN" en="MY ROLE & CONTRIBUTION" /></p>
-            <h2><LanguageText es="Desarrollador frontend · Servicio Social" en="Frontend Developer · Social Service Program" /></h2>
+            <h2><LanguageText es="Desarrollo frontend · Módulo docente" en="Frontend development · Teacher module" /></h2>
           </div>
           <div>
             <p>
-              <LanguageText es="Participé en el desarrollo del frontend, principalmente en interfaces y flujos orientados al módulo docente. También trabajé en la organización de tipos, contratos, servicios simulados y adaptadores para preparar la integración con la API." en="I contributed to frontend development, mainly on interfaces and workflows for the teacher module. I also worked on organizing types, contracts, mock services, and adapters to prepare for API integration." />
+              <LanguageText es="Desarrollé las pantallas del módulo docente, incluidos el dashboard, la gestión de grupos y las vistas relacionadas con estudiantes y ejercicios. Mi trabajo se concentró en la interfaz que usan los docentes dentro de un sistema más amplio de tutoría asistida con IA." en="I developed the teacher-module screens, including the dashboard, class management, and views related to students and exercises. My work focused on the teacher interface within a broader AI-assisted tutoring system." />
             </p>
             <p>
-              <LanguageText es="Mi contribución se limita al trabajo de frontend y preparación de servicios; no atribuyo a mi rol la tesis, el backend completo ni el sistema desarrollado por el resto del equipo." en="My contribution is limited to frontend work and service preparation; I do not claim the thesis, the complete backend, or the system built by the rest of the team as my own work." />
+              <LanguageText es="Mi responsabilidad fue el módulo docente; no atribuyo a mi rol la tesis, el backend completo ni el sistema desarrollado por el resto del equipo." en="My responsibility was the teacher module; I do not claim the thesis, the complete backend, or the system built by the rest of the team as my own work." />
             </p>
             <a className="sti-case-org-link" href={organizationUrl} target="_blank" rel="noreferrer">
               <LanguageText es="Organización en GitHub" en="GitHub organization" /> <ArrowUpRight size={15} />

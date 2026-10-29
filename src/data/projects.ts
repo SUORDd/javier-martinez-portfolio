@@ -56,25 +56,26 @@ export const projects: Project[] = [
     slug: "tutor-ia-nem",
     number: "02",
     name: "STI-NEM",
-    category: "Educational Technology · Web Application",
-    role: "Frontend Developer · Servicio Social",
+    category: "Tecnología Educativa · Tutoría con IA",
+    role: "Frontend Developer · Módulo docente",
     status: "Proyecto académico · equipo",
     summary:
-      "Plataforma educativa web para organizar flujos académicos y actividades de aprendizaje; mi trabajo se centró en el frontend.",
+      "Tutor inteligente con IA para estudiantes de cuarto de primaria, alineado con la Nueva Escuela Mexicana y diseñado para generar ejercicios que acompañen su aprendizaje.",
     problem:
-      "La gestión de grupos, estudiantes y actividades educativas requiere flujos claros para los distintos perfiles escolares.",
+      "Los alumnos de cuarto de primaria necesitan practicar contenidos curriculares con orientación. STI-NEM plantea un tutor inteligente que les propone ejercicios y acompaña su aprendizaje.",
     solution:
-      "Una aplicación web educativa que reúne interfaces para el trabajo docente y actividades vinculadas con contenidos curriculares.",
+      "Un sistema web con módulos para docente, estudiante y administración, cuyo objetivo inicial es generar ejercicios con IA alineados con la Nueva Escuela Mexicana.",
     contribution:
-      "Participé en el desarrollo del frontend y en la preparación de contratos, servicios simulados y adaptadores para la integración con API; el código fuente no está disponible para comprobar cada implementación.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Zod"],
+      "Desarrollé las pantallas del módulo docente, incluidas las vistas de dashboard, grupos y ejercicios. Mi aporte fue la interfaz docente dentro del equipo que desarrolla el sistema completo.",
+    tags: ["Tutoría con IA", "Nueva Escuela Mexicana", "4.º de primaria", "Módulo docente", "Frontend"],
     overview: [
-      "STI-NEM es una plataforma web educativa con interfaces para gestión académica y actividades de aprendizaje. El trabajo se realizó en equipo como parte de un proyecto de tesis de maestría del Tecnológico Nacional de México.",
+      "STI-NEM es un sistema inteligente de tutoría asistida con IA, pensado para alumnos de cuarto de primaria. Su objetivo inicial es generar ejercicios alineados con la Nueva Escuela Mexicana y ayudar al alumno a aprender mientras los resuelve. La plataforma contempla módulos de docente, estudiante y administración.",
+      "El trabajo se realizó en equipo como parte de un proyecto de tesis de maestría del Tecnológico Nacional de México.",
       "Las capturas disponibles documentan las vistas. Los repositorios del frontend y backend no son públicos ni accesibles desde este entorno, por lo que no pude verificar dependencias, rutas, servicios o conexión real con la API.",
     ],
     implemented: [
-      "Capturas de dashboard docente, grupos, perfil de estudiante, configuración de ejercicios y consulta de ejercicios.",
-      "Interfaz de criterios curriculares para ejercicios; la captura no confirma generación conectada ni procesamiento de resultados.",
+      "Pantallas del módulo docente: dashboard, gestión de grupos y vistas relacionadas con estudiantes y ejercicios.",
+      "Interfaz de criterios curriculares para ejercicios. Las capturas muestran las pantallas, pero no comprueban por sí solas la generación mediante IA.",
     ],
     planned: [
       "Verificar contratos, rutas y tecnologías contra el repositorio sti-nem-front cuando el código esté accesible.",
