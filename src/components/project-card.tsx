@@ -29,22 +29,6 @@ export function ProjectCard({ project }: { project: Project }) {
           )}
         </div>
         <p className="project-category"><LanguageText es={project.category} en={projectText(project, "category")} /></p>
-        {project.slug === "tutor-ia-nem" && (
-          <div className="project-stack">
-            <div className="project-stack-group" role="group" aria-labelledby="sti-nem-focus-label">
-              <span className="project-stack-note" id="sti-nem-focus-label"><LanguageText es="Enfoque" en="Focus" /></span>
-              <div className="project-stack-tags">
-                {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
-              </div>
-            </div>
-            <div className="project-stack-group" role="group" aria-labelledby="sti-nem-stack-label">
-              <span className="project-stack-note" id="sti-nem-stack-label"><LanguageText es="Stack técnico del frontend" en="Frontend tech stack" /></span>
-              <div className="project-stack-tags">
-                {(project.techStack ?? []).map((tag) => <span key={tag}>{tag}</span>)}
-              </div>
-            </div>
-          </div>
-        )}
         <p className="project-summary"><LanguageText es={project.summary} en={projectText(project, "summary")} /></p>
         <div className="project-role">
           <span><LanguageText es="MI PARTICIPACIÓN" en="MY ROLE" /></span>
