@@ -4591,6 +4591,39 @@ html[data-scrolled="true"] .site-header {
 .ingles-case-status-grid article > span { color: var(--ingles-blue); font: 9px var(--mono-font); }
 .ingles-case-status-grid h3 { margin: 15px 0 8px; font: 500 20px var(--heading-font); }
 .ingles-case-status-grid p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.ingles-case-data-note {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(18px, 3vw, 34px);
+  margin-top: 36px;
+  padding: 22px clamp(18px, 3vw, 28px);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--ingles-blue);
+  background: var(--bg);
+}
+.ingles-case-data-note-heading { display: grid; align-content: start; gap: 13px; }
+.ingles-case-data-note-status {
+  width: fit-content;
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--ingles-blue);
+  font: 8px var(--mono-font);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ingles-case-data-note h3 {
+  margin: 0;
+  font: 500 clamp(18px, 2vw, 23px) / 1.25 var(--heading-font);
+  letter-spacing: -0.035em;
+}
+.ingles-case-data-note-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.85;
+}
+.ingles-case-data-note-copy p + p { margin-top: 10px; }
 @media (max-width: 850px) {
   .ingles-case-hero-grid { grid-template-columns: 1fr; gap: 34px; }
   .ingles-case-hero-visual { grid-row: auto; }
@@ -4598,6 +4631,7 @@ html[data-scrolled="true"] .site-header {
   .ingles-case-architecture-grid { grid-template-columns: 1fr; gap: 0; }
   .ingles-case-architecture-grid > i { justify-self: center; padding: 10px 0; transform: rotate(90deg); }
   .ingles-case-architecture-grid article { min-height: 0; }
+  .ingles-case-data-note { grid-template-columns: 1fr; }
 }
 
 .ingles-chido-home-visual.ingles-chido-cover-detail {
@@ -4694,6 +4728,7 @@ html[data-scrolled="true"] .site-header {
   .ingles-case-stack-list article { grid-template-columns: 1fr; gap: 6px; }
   .ingles-case-highlight-grid,
   .ingles-case-status-grid { grid-template-columns: 1fr; }
+  .ingles-case-data-note { gap: 16px; margin-top: 26px; padding: 17px; }
   .ingles-chido-home-visual.ingles-chido-cover-detail {
     min-height: 300px;
     padding: 13px;

@@ -391,6 +391,28 @@ export function InglesChidoCaseStudy() {
             <article><span>02</span><h3><LanguageText es="En desarrollo" en="In development" /></h3><p><LanguageText es="Backend modular y evolución de los flujos locales hacia servicios compartidos." en="A modular backend and the gradual move from local flows to shared services." /></p></article>
             <article><span>03</span><h3><LanguageText es="Planeado" en="Planned" /></h3><p><LanguageText es="Sincronización remota y adaptación de sesiones a partir de evidencias de aprendizaje." en="Remote synchronization and practice-session adaptation based on learning evidence." /></p></article>
           </div>
+          <aside className="ingles-case-data-note" aria-labelledby="ingles-case-data-note-title">
+            <div className="ingles-case-data-note-heading">
+              <span className="ingles-case-data-note-status"><LanguageText es="Planificado" en="Planned" /></span>
+              <h3 id="ingles-case-data-note-title">
+                <LanguageText es="Próxima evolución: analítica del aprendizaje y personalización basada en datos" en="Next evolution: learning analytics and data-informed personalization" />
+              </h3>
+            </div>
+            <div className="ingles-case-data-note-copy">
+              <p>
+                <LanguageText
+                  es="Inglés Chido contempla incorporar un módulo de análisis de datos orientado a comprender cómo aprende cada usuario. A través de la recopilación de datos de interacción y desempeño —como progreso, respuestas correctas e incorrectas, tiempos de respuesta y dificultades por tema— se buscará identificar patrones de aprendizaje y generar recomendaciones personalizadas."
+                  en="Inglés Chido plans to add a data-analysis module to better understand how each learner learns. Once implemented, it would use interaction and performance data—such as progress, correct and incorrect answers, response times, and topic-level difficulties—to identify learning patterns and provide personalized recommendations."
+                />
+              </p>
+              <p>
+                <LanguageText
+                  es="El objetivo es evolucionar hacia una experiencia educativa adaptativa, en la que contenidos, ejercicios y rutas de estudio puedan ajustarse a las necesidades y al progreso individual de cada estudiante. Esta funcionalidad forma parte de la planificación futura del proyecto."
+                  en="The goal is an adaptive learning experience in which content, exercises, and study paths can respond to each student’s needs and progress. This functionality is part of the project’s future plans."
+                />
+              </p>
+            </div>
+          </aside>
         </div>
       </section>
 
