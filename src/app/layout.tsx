@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     ...(socialImage ? { images: socialImage } : {}),
   },
   icons: {
-    icon: getPublicAssetPath("/favicon.svg"),
-    shortcut: getPublicAssetPath("/favicon.svg"),
+    icon: getPublicAssetPath("/favicon-fj.svg"),
+    shortcut: getPublicAssetPath("/favicon-fj.svg"),
   },
   robots: { index: true, follow: true },
 };
