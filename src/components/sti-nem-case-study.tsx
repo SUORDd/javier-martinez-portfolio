@@ -85,40 +85,100 @@ const captures: AelpCapture[] = [
   },
 ];
 
-const declaredStack = [
+const frontendStack = [
   {
-    name: "Next.js",
-    role: "Framework web señalado para rutas y estructura de la aplicación.",
+    name: "Next.js 16.3.1",
+    role: "App Router y estructura principal del frontend.",
     icon: Globe2,
   },
   {
-    name: "React",
-    role: "Interfaces y componentes reutilizables.",
+    name: "React 19.2",
+    role: "Librería para interfaces y componentes reutilizables.",
     icon: Layers3,
   },
   {
-    name: "TypeScript",
-    role: "Tipos y contratos de datos.",
+    name: "TypeScript estricto",
+    role: "Tipado del frontend y de los contratos de datos.",
     icon: Braces,
   },
   {
-    name: "Tailwind CSS",
-    role: "Estilos de interfaz responsiva.",
+    name: "Tailwind CSS 4",
+    role: "Estilos de interfaz; incluye tw-animate-css para animaciones.",
     icon: Code2,
   },
   {
+    name: "shadcn/ui · Base Nova",
+    role: "Componentes de interfaz con la base visual Nova.",
+    icon: Layers3,
+  },
+  {
+    name: "Base UI",
+    role: "Componentes base para construir la interfaz.",
+    icon: Layers3,
+  },
+  {
+    name: "Lucide",
+    role: "Iconografía de la aplicación.",
+    icon: Globe2,
+  },
+  {
     name: "Zod",
-    role: "Esquemas de validación reportados para datos y respuestas.",
+    role: "Validación de datos de formularios y respuestas.",
     icon: ShieldCheck,
+  },
+  {
+    name: "Server Actions · useActionState",
+    role: "Acciones de servidor y manejo de formularios.",
+    icon: Server,
+  },
+  {
+    name: "Fetch API",
+    role: "Cliente HTTP para el consumo de servicios.",
+    icon: Globe2,
+  },
+  {
+    name: "class-variance-authority",
+    role: "Variantes reutilizables para clases de componentes.",
+    icon: Code2,
+  },
+  {
+    name: "clsx",
+    role: "Composición condicional de clases.",
+    icon: Code2,
+  },
+  {
+    name: "tailwind-merge",
+    role: "Fusión de clases de Tailwind CSS.",
+    icon: Code2,
+  },
+  {
+    name: "npm",
+    role: "Gestor de paquetes del proyecto.",
+    icon: Database,
+  },
+  {
+    name: "ESLint · Prettier",
+    role: "Linting y formato de código.",
+    icon: Check,
   },
 ];
 
-const declaredStackEnglish: Record<string, string> = {
-  "Next.js": "Web framework reported for routing and application structure.",
-  React: "Interfaces and reusable components.",
-  TypeScript: "Types and data contracts.",
-  "Tailwind CSS": "Responsive interface styling.",
-  Zod: "Validation schemas reported for data and responses.",
+const frontendStackEnglish: Record<string, string> = {
+  "Next.js 16.3.1": "App Router and main frontend structure.",
+  "React 19.2": "Library for interfaces and reusable components.",
+  "TypeScript estricto": "Strict typing for the frontend and data contracts.",
+  "Tailwind CSS 4": "Interface styling, with tw-animate-css for animations.",
+  "shadcn/ui · Base Nova": "UI components with the Base Nova visual style.",
+  "Base UI": "Foundation components for building the interface.",
+  Lucide: "Application icon set.",
+  Zod: "Validation for form data and responses.",
+  "Server Actions · useActionState": "Server actions and form state handling.",
+  "Fetch API": "HTTP client for consuming services.",
+  "class-variance-authority": "Reusable component class variants.",
+  clsx: "Conditional class composition.",
+  "tailwind-merge": "Tailwind CSS class merging.",
+  npm: "Project package manager.",
+  "ESLint · Prettier": "Linting and code formatting.",
 };
 
 export function StiNemCaseStudy() {
@@ -144,9 +204,9 @@ export function StiNemCaseStudy() {
                   <span key={tag.en}><LanguageText es={tag.es} en={tag.en} /></span>
                 ))}
               </div>
-              <p className="sti-case-stack-label"><LanguageText es="STACK REFERIDO PARA EL PROYECTO" en="REPORTED PROJECT STACK" /></p>
+              <p className="sti-case-stack-label"><LanguageText es="STACK TÉCNICO DEL FRONTEND" en="FRONTEND TECH STACK" /></p>
               <div className="sti-case-tech-inline">
-                {declaredStack.map(({ name }) => <span key={name}>{name}</span>)}
+                {frontendStack.slice(0, 7).map(({ name }) => <span key={name}>{name}</span>)}
               </div>
               <div className="sti-case-actions">
                 <a className="sti-case-org-link" href={organizationUrl} target="_blank" rel="noreferrer">
@@ -172,7 +232,7 @@ export function StiNemCaseStudy() {
             <h2><LanguageText es="Un tutor inteligente para practicar y aprender." en="An intelligent tutor to practice and learn." /></h2>
           </div>
           <p>
-            <LanguageText es="El sistema está pensado para apoyar a estudiantes de cuarto de primaria con ejercicios de la Nueva Escuela Mexicana generados con IA. También contempla módulos de docente, estudiante y administración; las capturas disponibles muestran sobre todo la interfaz del módulo docente." en="The system is designed to support fourth-grade students with AI-generated exercises aligned with Mexico’s New Mexican School curriculum. It also includes teacher, student, and administrator modules; the available screenshots mainly show the teacher interface." />
+            <LanguageText es="El sistema está pensado para apoyar a estudiantes de cuarto de primaria dentro de la Nueva Escuela Mexicana; su objetivo es que un tutor con IA genere ejercicios y acompañe su aprendizaje. La documentación organiza la plataforma en cuatro perfiles: estudiantes acceden a contenidos y actividades y consultan su progreso; docentes gestionan grupos, contenidos y actividades; dirección supervisa la operación académica; y administración gestiona usuarios, catálogos y configuración. Las capturas disponibles muestran sobre todo la interfaz del módulo docente." en="The system is designed to support fourth-grade students within Mexico’s New Mexican School curriculum, with an AI tutor intended to generate exercises and guide learning. The documentation defines four roles: students access content and activities and track their progress; teachers manage groups, content, and activities; directors supervise academic operations; and administrators manage users, catalogs, and settings. The available screenshots mainly show the teacher-module interface." />
           </p>
         </div>
       </section>
@@ -204,16 +264,15 @@ export function StiNemCaseStudy() {
               <h2><LanguageText es="Tecnologías del frontend" en="Frontend stack" /></h2>
             </div>
             <p>
-              <LanguageText es="Tecnologías indicadas para STI-NEM. No pude comprobar dependencias, versiones ni su uso en el código: el repositorio frontend no está disponible públicamente desde este entorno." en="Technologies reported for STI-NEM. I could not verify dependencies, versions, or their use in the code because the frontend repository is not publicly available from this environment." />
+              <LanguageText es="Tecnologías y herramientas del frontend descritas en la documentación técnica del proyecto." en="Frontend technologies and tools described in the project’s technical documentation." />
             </p>
           </div>
           <div className="sti-case-stack-grid">
-            {declaredStack.map(({ name, role, icon: Icon }) => (
+            {frontendStack.map(({ name, role, icon: Icon }) => (
               <article key={name}>
                 <Icon size={20} />
                 <strong>{name}</strong>
-                <p><LanguageText es={role} en={declaredStackEnglish[name] ?? role} /></p>
-                <span><LanguageText es="Declarado · no verificado en fuente" en="Reported · not verified in source" /></span>
+                <p><LanguageText es={role} en={frontendStackEnglish[name] ?? role} /></p>
               </article>
             ))}
           </div>

@@ -10,6 +10,7 @@ export type Project = {
   solution: string;
   contribution: string;
   tags: string[];
+  techStack?: string[];
   featured?: boolean;
   conceptual?: boolean;
   overview: string[];
@@ -64,12 +65,13 @@ export const projects: Project[] = [
     problem:
       "Los alumnos de cuarto de primaria necesitan practicar contenidos curriculares con orientación. STI-NEM plantea un tutor inteligente que les propone ejercicios y acompaña su aprendizaje.",
     solution:
-      "Un sistema web con módulos para docente, estudiante y administración, cuyo objetivo inicial es generar ejercicios con IA alineados con la Nueva Escuela Mexicana.",
+      "Un sistema web con módulos para estudiante, docente, dirección y administración, cuyo objetivo inicial es generar ejercicios con IA alineados con la Nueva Escuela Mexicana.",
     contribution:
       "Desarrollé las pantallas del módulo docente, incluidas las vistas de dashboard, grupos y ejercicios. Mi aporte fue la interfaz docente dentro del equipo que desarrolla el sistema completo.",
     tags: ["Tutoría con IA", "Nueva Escuela Mexicana", "4.º de primaria", "Módulo docente", "Frontend"],
+    techStack: ["Next.js 16.3.1", "React 19.2", "TypeScript estricto", "Tailwind CSS 4", "shadcn/ui · Base Nova"],
     overview: [
-      "STI-NEM es un sistema inteligente de tutoría asistida con IA, pensado para alumnos de cuarto de primaria. Su objetivo inicial es generar ejercicios alineados con la Nueva Escuela Mexicana y ayudar al alumno a aprender mientras los resuelve. La plataforma contempla módulos de docente, estudiante y administración.",
+      "STI-NEM es un sistema inteligente de tutoría asistida con IA, pensado para alumnos de cuarto de primaria. Su objetivo inicial es generar ejercicios alineados con la Nueva Escuela Mexicana y ayudar al alumno a aprender mientras los resuelve. La documentación describe perfiles de estudiante, docente, dirección y administración, con funciones específicas para cada rol.",
       "El trabajo se realizó en equipo como parte de un proyecto de tesis de maestría del Tecnológico Nacional de México.",
       "Las capturas disponibles documentan las vistas. Los repositorios del frontend y backend no son públicos ni accesibles desde este entorno, por lo que no pude verificar dependencias, rutas, servicios o conexión real con la API.",
     ],

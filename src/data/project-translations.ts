@@ -42,7 +42,7 @@ export const projectEnglish: Record<string, Partial<Project>> = {
     contribution:
       "I developed the teacher-module screens, including the dashboard, class-management, and exercise views. My contribution focused on the teacher interface within the team building the broader system.",
     overview: [
-      "STI-NEM is an AI-assisted intelligent tutoring system designed for fourth-grade students. Its initial goal is to generate exercises aligned with Mexico’s New Mexican School curriculum and help students learn as they solve them. The platform includes teacher, student, and administrator modules.",
+      "STI-NEM is an AI-assisted intelligent tutoring system designed for fourth-grade students. Its initial goal is to generate exercises aligned with Mexico’s New Mexican School curriculum and help students learn as they solve them. The technical documentation describes student, teacher, director, and administrator roles, each with specific functions.",
       "The work was completed as a team as part of a master's thesis project at Mexico's National Institute of Technology.",
       "Available screenshots document the views. The frontend and backend repositories are not public or accessible from this environment, so I could not verify dependencies, routes, services, or a live API connection.",
     ],

@@ -4749,6 +4749,9 @@ html[data-scrolled="true"] .site-header {
   font: 7px var(--mono-font);
   text-transform: uppercase;
 }
+.project-stack-group + .project-stack-group { margin-top: 10px; }
+.project-stack-group .project-stack-note { margin-top: 0; }
+.project-stack-group:first-child .project-stack-note { margin-top: 12px; }
 .project-stack-tags {
   display: flex;
   flex-wrap: wrap;
