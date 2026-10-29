@@ -202,7 +202,7 @@ export default async function ProjectPage({
               </p>
               {isInglesChido && (
                 <a
-                  href="https://github.com/SUORDd/Ingles-Chido"
+                  href="https://github.com/Tecomahua/Ingles-Chido"
                   target="_blank"
                   rel="noreferrer"
                 >

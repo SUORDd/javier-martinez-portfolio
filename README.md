@@ -23,7 +23,7 @@ El sitio se exporta a `out/`. Para ejecutarlo bajo una ruta de repositorio, conf
 
 ## GitHub Pages
 
-Este repositorio se publica automáticamente en [suordd.github.io/javier-martinez-portfolio](https://suordd.github.io/javier-martinez-portfolio/) al actualizar `main`. El workflow configura la ruta base para el nombre del repositorio y genera sitemap, canonical y enlaces a imágenes con la URL pública del sitio.
+Este repositorio se publica automáticamente en [tecomahua.github.io/javier-martinez-portfolio](https://tecomahua.github.io/javier-martinez-portfolio/) al actualizar `main`. El workflow configura la ruta base para el nombre del repositorio y genera sitemap, canonical y enlaces a imágenes con la URL pública del sitio.
 
 ## Contenido
 

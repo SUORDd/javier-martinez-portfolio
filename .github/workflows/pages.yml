@@ -31,7 +31,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /javier-martinez-portfolio
-          NEXT_PUBLIC_SITE_URL: https://suordd.github.io
+          NEXT_PUBLIC_SITE_URL: https://tecomahua.github.io
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

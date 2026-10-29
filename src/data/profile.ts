@@ -9,7 +9,7 @@ export const profile = {
   email: "fjmt0716@gmail.com",
   phone: "+52 271 228 9859",
   phoneUri: "+522712289859",
-  github: "https://github.com/SUORDd",
+  github: "https://github.com/Tecomahua",
   linkedin: "https://www.linkedin.com/in/Tecomahua",
   contactLocation: "Veracruz, México",
   languages: "Español nativo · Inglés B2",

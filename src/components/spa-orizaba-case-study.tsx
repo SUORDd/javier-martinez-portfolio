@@ -242,7 +242,7 @@ export function SpaOrizabaCaseStudy() {
                 </Link>
                 <a
                   className={`button button-secondary ${styles.repoAction}`}
-                  href="https://github.com/SUORDd/spa-orizaba-analisis"
+                  href="https://github.com/Tecomahua/spa-orizaba-analisis"
                   target="_blank"
                   rel="noreferrer"
                 >

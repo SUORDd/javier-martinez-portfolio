@@ -232,7 +232,7 @@ export function PortfolioPage() {
               </span>
               <div>
                 <small><LanguageText es="CÓDIGO Y PROYECTOS" en="CODE & PROJECTS" /></small>
-                <strong>github.com/SUORDd</strong>
+                <strong>github.com/Tecomahua</strong>
               </div>
               <ArrowUpRight size={17} />
             </a>
