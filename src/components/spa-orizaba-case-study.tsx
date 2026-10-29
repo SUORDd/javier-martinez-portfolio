@@ -6,6 +6,7 @@ import {
   ArrowUpRight,
   ChartNoAxesCombined,
   Database,
+  Github,
   MapPin,
   Users,
   Workflow,
@@ -235,9 +236,19 @@ export function SpaOrizabaCaseStudy() {
               <div className={styles.tags} aria-label="Herramientas y fuentes / Tools and data sources">
                 {["Python", "Pandas", "NumPy", "ENIGH 2024", "DENUE", "INEGI"].map((tag) => <span key={tag}>{tag}</span>)}
               </div>
-              <Link className={`button button-primary ${styles.heroAction}`} href="#metodo">
-                <LanguageText es="Ver el análisis" en="Explore the analysis" /> <ArrowRight size={17} />
-              </Link>
+              <div className={styles.heroActions}>
+                <Link className={`button button-primary ${styles.heroAction}`} href="#metodo">
+                  <LanguageText es="Ver el análisis" en="Explore the analysis" /> <ArrowRight size={17} />
+                </Link>
+                <a
+                  className={`button button-secondary ${styles.repoAction}`}
+                  href="https://github.com/SUORDd/spa-orizaba-analisis"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Github size={16} /> <LanguageText es="Ver repositorio" en="View repository" />
+                </a>
+              </div>
             </div>
             <figure className={styles.heroFigure}>
               <div className={styles.heroImage}>

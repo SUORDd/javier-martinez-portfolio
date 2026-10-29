@@ -77,8 +77,17 @@
   font: 8px var(--mono-font);
 }
 
-.heroAction {
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
   margin-top: 26px;
+}
+
+.heroAction,
+.repoAction {
+  margin-top: 0;
 }
 
 .heroFigure {
