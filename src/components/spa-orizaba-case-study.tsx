@@ -33,8 +33,8 @@ const figures: AelpCapture[] = [
       "Regional index chart: Orizaba scores 78.8, ahead of Fortín de las Flores, Camerino Z. Mendoza, Río Blanco, Nogales, and Mariano Escobedo.",
     category: "Oportunidad regional",
     categoryEn: "Regional opportunity",
-    width: 1460,
-    height: 837,
+    width: 2880,
+    height: 1620,
   },
   {
     file: "demographic-profile.jpg",
@@ -49,8 +49,8 @@ const figures: AelpCapture[] = [
       "Orizaba profile by sex and age: 53.9 percent women, 46.1 percent men, and 57,249 residents aged 25 to 59.",
     category: "Perfil local",
     categoryEn: "Local profile",
-    width: 1535,
-    height: 1024,
+    width: 2880,
+    height: 1620,
   },
   {
     file: "services-landscape.jpg",
@@ -65,8 +65,8 @@ const figures: AelpCapture[] = [
       "Pie chart from the report: 26 direct spas and 735 similar non-specialized services.",
     category: "Competencia",
     categoryEn: "Competition",
-    width: 800,
-    height: 732,
+    width: 2880,
+    height: 1620,
   },
   {
     file: "denue-competitor-map.jpg",
@@ -81,8 +81,8 @@ const figures: AelpCapture[] = [
       "Map of Orizaba showing spas, cosmetology, beauty, nail, and massage businesses, with the downtown area outlined.",
     category: "Competencia",
     categoryEn: "Competition",
-    width: 1536,
-    height: 847,
+    width: 2880,
+    height: 1620,
   },
   {
     file: "zone-opportunity.jpg",
@@ -97,8 +97,8 @@ const figures: AelpCapture[] = [
       "Neighborhood opportunity score chart: downtown 77.4, Centro Barrio Aulicaba 53.5, Cerritos 52.1, and other areas around 50.",
     category: "Ubicación",
     categoryEn: "Location",
-    width: 1536,
-    height: 1024,
+    width: 2880,
+    height: 1620,
   },
 ];
 
@@ -255,8 +255,8 @@ export function SpaOrizabaCaseStudy() {
                 <Image
                   src={getPublicAssetPath("/images/spa-orizaba/regional-opportunity.jpg")}
                   alt="Orizaba alcanza 78.8 puntos en el índice regional de oportunidad del reporte."
-                  width={1460}
-                  height={837}
+                  width={2880}
+                  height={1620}
                   sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 620px"
                   priority
                   unoptimized
